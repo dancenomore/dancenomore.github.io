@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" data-theme="night">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[your name] · editing &amp; motion</title>
+<meta name="description" content="Video editing and motion design portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Mono:wght@300;400&family=Reenie+Beanie&family=Space+Mono:wght@400&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="scan" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="brand" href="#top">[your name]</a>
+  <nav aria-label="Main">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="themes" role="group" aria-label="Colour theme">
+    <button type="button" data-set-theme="night" aria-pressed="true">3 a.m.</button>
+    <button type="button" data-set-theme="album" aria-pressed="false">album</button>
+    <button type="button" data-set-theme="tape" aria-pressed="false">tape</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="glow g1" aria-hidden="true"></div>
+    <div class="glow g2" aria-hidden="true"></div>
+    <div class="glow g3" aria-hidden="true"></div>
+    <div class="hero-meta hero-meta-l" aria-hidden="true"><span class="rec">●</span> <span class="when-tape">REC</span><span class="when-night">loop · 6 sec · muted</span></div>
+    <div class="hero-meta hero-meta-r" aria-hidden="true"><span class="when-tape">SP 00:03:12</span><span class="when-night">03:07</span></div>
+    <div class="hero-copy">
+      <h1>[your name]</h1>
+      <p class="tagline">editing · motion · after effects</p>
+      <p class="hand">a summer i half remember</p>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
+    <div class="rule"><h2 id="work-h" class="label">selected work</h2><span></span></div>
+    <div id="grid" class="grid"></div>
+  </section>
+
+  <section id="about" aria-labelledby="about-h">
+    <div class="rule"><h2 id="about-h" class="label">about</h2><span></span></div>
+    <div class="about">
+      <p class="about-big">[one soft sentence about how you work]</p>
+      <p class="about-small">[Two or three plain lines: what you edit, what you animate, the software you use, where you are based.]</p>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="rule"><h2 id="contact-h" class="label">contact</h2><span></span></div>
+    <div class="contact">
+      <a href="mailto:you@example.com">you@example.com</a>
+      <span class="socials"><a href="https://vimeo.com/" rel="noopener">vimeo</a> · <a href="https://instagram.com/" rel="noopener">instagram</a></span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p>Fan edits use footage from the original shows and music videos, credited on each project. Not affiliated with any rights holder.</p>
+</footer>
+
+<dialog id="player" aria-label="Video player">
+  <button type="button" class="close" id="closePlayer" aria-label="Close video">close</button>
+  <div class="frame"><iframe id="playerFrame" title="Project video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+  <p class="p-title" id="playerTitle"></p>
+  <p class="p-meta" id="playerMeta"></p>
+</dialog>
+
+<script src="projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
